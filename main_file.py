@@ -10,12 +10,14 @@ l = len(string)
 CPP = ".cpp"
 PY  = ".py"
 C   = ".c"
+JAVA = ".java"
+
+name = extraction.extract_name(string,l)
 
 Input_Cpp = "#include<bits/stdc++.h>\nusing namespace std;\nint main(){\n\nreturn 0;\n}\n"
 Input_Py  = "if __name__ =='__main__'\n"
 Input_C   = "#include<stdio.h>\nint main(){\n\nreturn 0;\n}"
-
-name = extraction.extract_name(string,l)
+Input_Java= "public class "+name+"{\npublic static void main(String args[]){\n\n }\n}"
 
 if CPP in string:
     file = open(name+CPP,"w+")
@@ -26,3 +28,6 @@ elif PY in string:
 elif C in string:
     file = open(name+C,"w+")
     file.write(Input_C)
+elif JAVA in string:
+    file = open(name+JAVA,"w+")
+    file.write(Input_Java)
