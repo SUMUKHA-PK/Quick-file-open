@@ -11,3 +11,9 @@ Further extensions are to use the script from any location, add files in any loc
 File Structure:
   1. main_file     : Script that needs to be run to be run to complete desired tasks.
   2. extraction.py : This module helps in parsing the data.
+
+Update :  
+  Support for accessing script anywhere is added.    
+  To do so, first enter ```chmod +x /path_to_file/main_file.py```   
+  Then wherever you want to create the file run the command ```python3 main_file.py```  
+  Follow further instructions according to script  

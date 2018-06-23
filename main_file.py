@@ -1,4 +1,7 @@
+#!/usr/bin/env python3
+
 # This is the main file that does all the work
+
 
 import os
 import sys
