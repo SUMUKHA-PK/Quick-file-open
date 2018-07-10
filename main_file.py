@@ -17,9 +17,9 @@ JAVA = ".java"
 
 name = extraction.extract_name(string,l)
 
-Input_Cpp = "#include<bits/stdc++.h>\nusing namespace std;\nint main(){\n\nreturn 0;\n}\n"
+Input_Cpp = "#include<bits/stdc++.h>\nusing namespace std;\nint main()\n{\n\n return 0;\n}\n"
 Input_Py  = "if __name__ =='__main__'\n"
-Input_C   = "#include<stdio.h>\nint main(){\n\nreturn 0;\n}"
+Input_C   = "#include<stdio.h>\nint main()\n{\n\n return 0;\n}"
 Input_Java= "public class "+name+"{\npublic static void main(String args[]){\n\n }\n}"
 
 if CPP in string:
